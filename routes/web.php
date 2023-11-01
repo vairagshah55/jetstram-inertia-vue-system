@@ -47,17 +47,5 @@ Route::middleware([
     // })->name('dashboard');
 
     //Dashboard Render
-    Route::get('/dashboard', [ProductController::class, 'dashboard'])->name('dashboard');
-
-
-    //priduct store route -- create
-    Route::post('/dashboard', [ProductController::class, 'store'])->name('products.store');
-
-    Route::get('/products/list', [ProductController::class, 'productsList'])->name('products-list');
-
-    Route::put('products/{product}/edit', [ProductController::class, 'productsUpdate'])->name('products.update');
-
-    Route::get('/products/{product}/edit', [ProductController::class, 'productsEdit'])->name('products-edit');
-
-    Route::delete('products/{product}', [ProductController::class, 'destroy'])->name('products.destroy');
+   
 });
