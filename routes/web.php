@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Web\BookingContoller;
 use App\Http\Controllers\Web\ProductController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -27,4 +28,7 @@ Route::middleware([
     Route::get('/', function () {
         return to_route('dashboard');
     });
+
+    //Dashboard Render
+    Route::get('/dashboard', [BookingContoller::class, 'dashboard'])->name('dashboard');
 });
