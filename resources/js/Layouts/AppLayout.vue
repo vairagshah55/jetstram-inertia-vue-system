@@ -87,7 +87,7 @@ const logout = () => {
                                 </NavLink>
 
                                 <NavLink :href="route('products-list')" :active="route().current('products-list')">
-                                    Product List
+                                    Booking List
                                 </NavLink>
 
                                 <NavLink :href="route('profile.show')" :active="route().current('profile.show')">

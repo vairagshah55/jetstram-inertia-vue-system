@@ -55,7 +55,7 @@ export default {
                         </svg>
                         <Link href="/products/list"
                             class="ml-1 text-gray-700 hover:text-primary-600 md:ml-2 dark:text-gray-300 dark:hover:text-white">
-                        eVital-App</Link>
+                        Booking-System</Link>
                     </div>
                 </li>
                 <li>

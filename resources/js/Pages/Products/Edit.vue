@@ -73,7 +73,7 @@ export default {
                                                 clip-rule="evenodd"></path>
                                         </svg>
                                         <a href="/products/list"
-                                            class="ml-1 text-gray-700 hover:text-primary-600 md:ml-2 dark:text-gray-300 dark:hover:text-white">eVital-App</a>
+                                            class="ml-1 text-gray-700 hover:text-primary-600 md:ml-2 dark:text-gray-300 dark:hover:text-white">Booking-System</a>
                                     </div>
                                 </li>
                                 <li>
