@@ -1,6 +1,6 @@
 <script setup>
 import AppLayout from '@/Layouts/AppLayout.vue';
-import Create from '@/Components/Create.vue';
+import Create from '@/Pages/Products/Create.vue';
 </script>
 
 <template>
