@@ -31,4 +31,8 @@ Route::middleware([
 
     //Dashboard Render
     Route::get('/dashboard', [BookingContoller::class, 'dashboard'])->name('dashboard');
+
+    Route::get('/create-booking', [BookingContoller::class, 'createBooking'])->name('booking.create');
+
+    // Route::post('/create-booking', [BookingContoller::class, 'store'])->name('booking.store');
 });

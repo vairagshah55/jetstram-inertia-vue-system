@@ -8,7 +8,15 @@ module.exports = {
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
         './resources/js/**/*.vue',
+        // "./node_modules/flowbite/**/*.js",
+        "./index.html",
+        "./src/**/*.{vue,js,ts,jsx,tsx}",
+        'node_modules/flowbite-vue/**/*.{js,jsx,ts,tsx}',
+        'node_modules/flowbite/**/*.{js,jsx,ts,tsx}',
     ],
+
+
+    plugins: [require('flowbite/plugin')],
 
     theme: {
         extend: {

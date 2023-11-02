@@ -17,4 +17,9 @@ class BookingContoller extends Controller
     {
         return Inertia::render('Dashboard');
     }
+
+    public function createBooking(Request $request)
+    {
+        return Inertia::render('Create');
+    }
 }
