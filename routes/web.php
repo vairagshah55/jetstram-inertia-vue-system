@@ -32,7 +32,19 @@ Route::middleware([
     //Dashboard Render
     Route::get('/dashboard', [BookingContoller::class, 'dashboard'])->name('dashboard');
 
-    Route::get('/create-booking', [BookingContoller::class, 'createBooking'])->name('booking.create');
+    // Route::get('/create-booking', [BookingContoller::class, 'createBooking'])->name('booking.create');
 
     // Route::post('/create-booking', [BookingContoller::class, 'store'])->name('booking.store');
+
+
+    //priduct store route -- create
+    Route::post('/dashboard', [ProductController::class, 'store'])->name('products.store');
+
+    Route::get('/products/list', [ProductController::class, 'productsList'])->name('products-list');
+
+    Route::put('products/{product}/edit', [ProductController::class, 'productsUpdate'])->name('products.update');
+
+    Route::get('/products/{product}/edit', [ProductController::class, 'productsEdit'])->name('products-edit');
+
+    Route::delete('products/{product}', [ProductController::class, 'destroy'])->name('products.destroy');
 });
