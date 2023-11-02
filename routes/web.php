@@ -26,11 +26,11 @@ Route::middleware([
 
     //REDIRECT TO DASHBOARD AFTER LOGIN
     Route::get('/', function () {
-        return to_route('dashboard');
+        return to_route('products.create');
     });
 
     //Dashboard Render
-    Route::get('/dashboard', [BookingContoller::class, 'dashboard'])->name('dashboard');
+    Route::get('/dashboard', [BookingContoller::class, 'dashboard'])->name('products.create');
 
     // Route::get('/create-booking', [BookingContoller::class, 'createBooking'])->name('booking.create');
 
